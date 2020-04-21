@@ -1,0 +1,6 @@
+software/LittlevGL/life/sdkconfig.old
+software/LittlevGL/life/build
+!software/LittlevGL/life/build/bootloader/bootloader.bin
+!software/LittlevGL/life/build/life.bin
+!software/LittlevGL/life/build/partitions_singleapp.bin
+

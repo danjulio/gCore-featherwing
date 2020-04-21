@@ -1,0 +1,91 @@
+ESP32 Featherwing Loadlist - Rev 2
+
+Part     Value               Device               Package             Library             Sheet
+A1       ESP32-WROVER-I      ESP32-WROVER-I       XCVR_ESP32-WROVER-I ESP32-WROVER-I      2
+
+C1       4.7 uF              C-USSMT0603          C0603               djd_eagle_library   1
+C3       4.7 uF              C-USSMT0603          C0603               djd_eagle_library   1
+C5       4.7 uF              C-USSMT0603          C0603               djd_eagle_library   1
+C6       4.7 uF              C-USSMT0603          C0603               djd_eagle_library   1
+C7       4.7 uF              C-USSMT0603          C0603               djd_eagle_library   1
+C8       4.7 uF              C-USSMT0603          C0603               djd_eagle_library   1
+
+C2       0.1 uF              C-USSMT0603          C0603               djd_eagle_library   1
+C4       0.1 uF              C-USSMT0603          C0603               djd_eagle_library   1
+C9       0.1 uF              C-USSMT0603          C0603               djd_eagle_library   1
+C10      0.1 uF              C-USSMT0603          C0603               djd_eagle_library   1
+C14      0.1 uF              C-USSMT0603          C0603               djd_eagle_library   2
+C16      0.1 uF              C-USSMT0603          C0603               djd_eagle_library   2
+
+C11      22 uF               C-USSMT0603          C0603               djd_eagle_library   2
+C13      22 uF               C-USSMT0603          C0603               djd_eagle_library   2
+C15      22 uF               C-USSMT0603          C0603               djd_eagle_library   2
+
+C12      1 nF                C-USSMT0603          C0603               djd_eagle_library   2
+
+CON1                         USBMICROB            USB_MICROB_SMT      djd_eagle_library   1
+
+D1       SP0503BAHTG         SP0503BAHTG          SOT143              djd_eagle_library   1
+
+D2       SD103               DIODESMT_SOD123      SOD123              djd_eagle_library   1
+D3       SD103               DIODESMT_SOD123      SOD123              djd_eagle_library   1
+D4       SD103               DIODESMT_SOD123      SOD123              djd_eagle_library   2
+D5       SD103               DIODESMT_SOD123      SOD123              djd_eagle_library   2
+
+F1       MF-MSMF050          PTCFUSE-1812         1812                adafruit            1
+F2       MF-MSMF050          PTCFUSE-1812         1812                adafruit            1
+
+J1       332-02              332-02               332-02              con-garry           1
+
+L1       1.5 uH              INDUCTORSMT1008      L1008               djd_eagle_library   2
+
+PB1      436351045816        PB_TACT_4WS          WURTH_WS_TASU_TACT  djd_eagle_library   2
+
+Q1       NX7002AKVL          MOSFET-NCHANNELSOT23 SOT23-3             djd_eagle_library   1
+Q2       NX7002AKVL          MOSFET-NCHANNELSOT23 SOT23-3             djd_eagle_library   1
+Q3       NX7002AKVL          MOSFET-NCHANNELSOT23 SOT23-3             djd_eagle_library   1
+Q4       NX7002AKVL          MOSFET-NCHANNELSOT23 SOT23-3             djd_eagle_library   2
+Q6       NX7002AKVL          MOSFET-NCHANNELSOT23 SOT23-3             djd_eagle_library   2
+
+Q5       MMBT3904-7-F        BC808-NPN-SOT23-BEC  SOT23-BEC           transistor          2
+Q7       MMBT3904-7-F        BC808-NPN-SOT23-BEC  SOT23-BEC           transistor          2
+
+R1       1 kohm              R-USSMT0603          R0603               djd_eagle_library   1
+R12      1 kohm              R-USSMT0603          R0603               djd_eagle_library   1
+R24      1 kohm              R-USSMT0603          R0603               djd_eagle_library   2
+R26      1 kohm              R-USSMT0603          R0603               djd_eagle_library   2
+
+R2       22.1 kohm           R-USSMT0603          R0603               djd_eagle_library   1
+R11      22.1 kohm           R-USSMT0603          R0603               djd_eagle_library   1
+
+R3       47.5 kohm           R-USSMT0603          R0603               djd_eagle_library   1
+R13      47.5 kohm           R-USSMT0603          R0603               djd_eagle_library   1
+R14      47.5 kohm           R-USSMT0603          R0603               djd_eagle_library   1
+
+R4       10 kohm             R-USSMT0603          R0603               djd_eagle_library   1
+R5       10 kohm             R-USSMT0603          R0603               djd_eagle_library   1
+R6       10 kohm             R-USSMT0603          R0603               djd_eagle_library   1
+R7       10 kohm             R-USSMT0603          R0603               djd_eagle_library   1
+R15      10 kohm             R-USSMT0603          R0603               djd_eagle_library   1
+R17      10 kohm             R-USSMT0603          R0603               djd_eagle_library   1
+R18      10 kohm             R-USSMT0603          R0603               djd_eagle_library   1
+R21      10 kohm             R-USSMT0603          R0603               djd_eagle_library   1
+R23      10 kohm             R-USSMT0603          R0603               djd_eagle_library   2
+R25      10 kohm             R-USSMT0603          R0603               djd_eagle_library   2
+R27      10 kohm             R-USSMT0603          R0603               djd_eagle_library   2
+R28      10 kohm             R-USSMT0603          R0603               djd_eagle_library   2
+
+R8       40.2 kohm           R-USSMT0603          R0603               djd_eagle_library   1
+R16      40.2 kohm           R-USSMT0603          R0603               djd_eagle_library   1
+R22      40.2 kohm           R-USSMT0603          R0603               djd_eagle_library   2
+
+R9       15 kohm             R-USSMT0603          R0603               djd_eagle_library   1
+R20      15 kohm             R-USSMT0603          R0603               djd_eagle_library   1
+
+R10      2 kohm              R-USSMT0603          R0603               djd_eagle_library   1
+
+R19      DNP                 R-USSMT0603          R0603               djd_eagle_library   1
+
+U1       CP2102N-A02-GQFN28R CP2102N_QFN28        QFN28               djd_eagle_library   1
+U2       MCP73871            MCP73871             QFN20               adafruit            1
+U3       TPS63051            TPS63051_QFN         HOTROD_QFN12        djd_eagle_library   2
