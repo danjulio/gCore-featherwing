@@ -185,7 +185,7 @@ void hx8357_init(uint8_t displayType)
 	hx8357_set_rotation(1);
 	
 #if HX8357_INVERT_DISPLAY
-	hx8357_send_cmd(HX8357_INVON);;
+	hx8357_send_cmd(HX8357_INVON);
 #endif
 }
 
