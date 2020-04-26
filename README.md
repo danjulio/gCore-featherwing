@@ -4,7 +4,7 @@ gCore ("Gadget Core") is an ESP32 development board designed to mate with the [A
 gCore is released as open source hardware and supporting software under the GPLv3 license in hopes it will be helpful to others.  This repository contains two subdirectories.
 
 1. hardware - contains eagle design files, gerber files, and documentation.
-2. software - arduino library for power control, [LittlevGL](https://github.com/littlevgl) driver for Arduino and [FabGL](https://github.com/fdivitto/FabGL) driver.
+2. software - arduino library for power control, [LittlevGL](https://github.com/littlevgl) driver for Arduino and [FabGL](https://github.com/fdivitto/FabGL) port.
 
 ![gCore LittlevGL](pictures/480x320_goodness.png)
 
@@ -41,7 +41,7 @@ A Microchip MCP73871 provides both the battery charging circuit and an intellige
 A TI TPS63051 boost-buck converter provides gCore's 3.3V power supply at up to 500 mA.  Unlike many other development boards that only use a buck-converter (or inefficient linear regulator), it assures a valid 3.3V power supply even when the battery is depleted.  
 
 #### Dual ICR10440 Li-Ion batteries
-A pair of AAA-sized Li-Ion batteries allows for relatively thin enclosures.  The batteries are connected in parallel with each battery in series with a PTC to allow them to equalize during charge and discharge and protect from shorts.  They are capable of powering a device for a couple of hours of run-time.  Quality ICR10440 cells can be found on Amazon.  Since the charger can provide up to 450-500 mA when gCore is powered down always use two cells so the per-cell charge current doesn't exceed its recommended maximum.
+A pair of AAA-sized Li-Ion batteries allow for relatively thin enclosures.  The batteries are connected in parallel with each battery in series with a PTC to allow them to equalize during charge and discharge and protect from shorts.  They are capable of powering a device for a couple of hours of run-time.  Quality ICR10440 cells can be found on Amazon.  Since the charger can provide up to 450-500 mA when gCore is powered down always use two cells so the per-cell charge current doesn't exceed its recommended maximum.
 
 A larger battery may also be used by connecting it to the terminals of one of the ICR10440 batteries.
 
@@ -53,6 +53,7 @@ A larger battery may also be used by connecting it to the terminals of one of th
 | IO15 |  TFT CS  | TFT CS# on Adafruit TFT Featherwing |
 | IO18 | SPI MOSI | SPI MOSI for TFT, Touchscreen and Micro-SD |
 | IO19 | SPI MISO | SPI MISO for Touchscreen and Micro-SD |
+| IO32 |   TS CS  | Touchscreen CS# on Adafruit TFT Featherwing |
 | IO33 |  TFT DC  | TFT DC on Adafruit TFT Featherwing |
 | IO34 | SNS_BTN  | ESP ADC1_CH6/Arduino A2 Button sense analog input |
 | IO35 | SNS_BATT | ESP ADC1_CH7 Battery voltage sense analog input |

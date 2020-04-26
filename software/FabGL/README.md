@@ -1,16 +1,16 @@
 # FabGL
 
 ## gCore Modifications
-This directory contains the modified FabGL code to work with gCore.  Primarily this includes adding support for the HX8357 TFT driver.  I had to modify FabGL to support a higher resolution TFT display (480x320) that included a new buffer scheme becuase the existing architecture caused the ESP32 to run out of memory at that resolution, as well as modify the terminal to support more than 25 lines.
+This directory contains the modified FabGL code to work with gCore.  Primarily this includes adding support for the HX8357 TFT driver.  I had to modify FabGL to support a higher resolution TFT display (480x320) that included a new buffer scheme because the existing software architecture caused the ESP32 to run out of memory at that resolution; as well as modify the terminal to support more than 25 lines.
 
-* `src/fabglconf.h` - Added modeline for 480x320 pixel TFT display.
+* `src/fabglconf.h` - Added a modeline for 480x320 pixel TFT display.
 * `src/terminal.cpp` - Added support for a maximum of 32 lines.
 * `src/dispdrivers/TFTControllerGeneric.cpp` - Many changes including reducing SPI frequency to 26 MHz and modifying the SPI transactions, changing malloc allocation to use a different buffer scheme and fixing a bug in the TFT orientation code.
-* `src/dispdrivers/TFTControllerGeneric.h` - Added new dma buffer.
+* `src/dispdrivers/TFTControllerGeneric.h` - Added new DMA buffer.
 * `src/dispdrivers/TFTControllerSpecific.cpp` - Added support for HX8357 TFT driver.
 * `src/dispdrivers/TFTControllerSpecific.h` - Added support for HX8357 TFT driver.
 
-The examples in this directory were ported to gCore.  I used GPIO13 for PS/2 keyboard data and GPIO27 for PS/2 keyboard clock wired the way Fabio recommends.  The examples here also include the gCore power management functionality with automatic low-battery shutdown and soft power off by pressing and holding the power button.
+The examples in this directory were ported to gCore.  I used GPIO13 for PS/2 keyboard data and GPIO27 for PS/2 keyboard clock wired the way Fabrizio recommends.  The examples here also include the gCore power management functionality with automatic low-battery shutdown and soft power off by pressing and holding the power button.
 
 ![A very famous telnet](pictures/wireless_telnet.png)
 

@@ -1,6 +1,6 @@
 ## gCore ESP32 Arduino
 
-Two simple demos showing how to ingtegrate gCore into your ESP32 arduino projects.  You will need to add ESP32 support to Arduino.
+Two simple demos showing how to integrate gCore into ESP32 Arduino projects.  You will need to add ESP32 support to Arduino (see links below).
 
 1. `gcore_power_demo` - Simple sketch that includes `gcore_power.ino` for power management (see below).  The sketch simply prints battery voltage, button press detection (short/long press) and charge state every second.  After 60 seconds a long press will power off (when the button is released).  After 120 seconds the sketch powers down automatically.
 
@@ -12,9 +12,9 @@ Two simple demos showing how to ingtegrate gCore into your ESP32 arduino project
 * [LittlevGL Arduino github](https://github.com/littlevgl/lv_arduino)
 
 ### gcore_power module API
-The gcore_power module creates a separate FreeRTOS task to read the three analog inputs connected to gCore circuitry (battery voltage, button, and charge state), keep power-management related state and provide an API for use by user Arduino code (protected by a mutex).
+The ```gcore_power``` module creates a separate FreeRTOS task to read the three analog inputs connected to gCore circuitry (battery voltage, button, and charge state), keep power-management related state and provide an API for use by user Arduino code (protected by a mutex).
 
-`gcore_set_btn_pin(pin)` - Used to set a non-standard GPIO pin for the button analog input (if you cut J3 and wire to another analog input).  Call this before calling gcore_begin().  Does not need to be called to use the default input.
+`gcore_set_btn_pin(pin)` - Used to set a non-standard GPIO pin for the button analog input (if you cut J3 and wire to another analog input).  Call this before calling ```gcore_begin()```.  Does not need to be called to use the default input.
 
 `gcore_set_stat_pin(pin)` - Used to set a non-standard GPIO pin for the status analog input (if you cut J4 and wire to another analog input).  Call this before calling `gcore_begin()`.  Does not need to be called to use the default input.
  
