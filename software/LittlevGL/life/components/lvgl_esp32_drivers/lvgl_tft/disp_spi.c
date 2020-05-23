@@ -42,7 +42,7 @@ static void IRAM_ATTR spi_ready (spi_transaction_t *trans);
  *  STATIC VARIABLES
  **********************/
 static spi_device_handle_t spi;
-static volatile bool spi_trans_in_progress;
+static volatile bool spi_trans_in_progress = false;
 static volatile bool spi_color_sent;
 static transaction_cb_t chained_post_cb;
 
