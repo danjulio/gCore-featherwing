@@ -293,7 +293,7 @@ static void gui_life_obj_add()
 	int n;
 	struct life_obj_t* obj;
 	
-	// "Edit Cell\n" + "[item]\n" + ... + "[itme]0"
+	// "Edit Cell\n" + "[item]\n" + ... + "[item]0"
 	
 	// Determine how much space we need for the string
 	n = strlen(init_items);
