@@ -33,3 +33,10 @@ These files represent the second revision of the design.  To date I have only bu
 5. Two pins (J6-14, J6-15) on the featherwing expansion port are not connected.  On Sparkfun and Adafruit ESP32 featherwings these are connected to ESP32 GPIO 16 and 17.  However these pins are not available on the gCore's WROVER-B module.  They are used internally for the 8 MB PSRAM.
 
 6. J1 is an optional jumper between the two USB data lines.  It should not be necessary and was included in case you ever attach a power supply to gCore that does not short the data lines.  The CP2102N will enable charging because it thinks the bus is not enumerated and there is no charger attached.  But be sure to remove the jumper before connecting to a computer!
+
+### Battery Notes
+After using a pair of gCore prototypes for some time I found that one unit would no longer keep the batteries balanced and they would slowly discharge.  The other unit works fine.  Experimentation described in more detail on the hackaday.io project page was unsuccessful in explaining why so now I must add the caveat that using the dual ICR10440 battery solution may not work.  It's easy, however, to use a single battery, connected to one pair of battery terminals, with its PTC bypassed, and the AAA battery holders removed or not installed.
+
+![Jumpered PTC](pictures/jumpered_ptc.png)
+
+![Single battery](pictures/single_battery.png)
