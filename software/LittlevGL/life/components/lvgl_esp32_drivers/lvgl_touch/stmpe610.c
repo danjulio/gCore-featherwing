@@ -133,7 +133,6 @@ bool stmpe610_read(lv_indev_drv_t * drv, lv_indev_data_t * data)
 			read_data(&x, &y, &z);
 			c++;
 		}
-		
 		if (c > 0) {
 			//ESP_LOGI(TAG, "%d: %d %d %d", c, x, y, z);
 		
@@ -185,8 +184,8 @@ static uint16_t read_16bit_reg(uint8_t reg)
 	uint8_t data_recv[2];
 	
 	//tp_spi_read_reg(0x80 | reg, data_recv, 2);
-	tp_spi_read_reg(0x80 | reg, &data_recv[0], 2);
-	tp_spi_read_reg(0x80 | (reg+1), &data_recv[1], 2);
+	tp_spi_read_reg(0x80 | reg, &data_recv[0], 1);
+	tp_spi_read_reg(0x80 | (reg+1), &data_recv[1], 1);
 	
 	return data_recv[0] << 8 | data_recv[1];
 }
