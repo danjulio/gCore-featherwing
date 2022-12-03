@@ -1,5 +1,7 @@
+Note: Check out my second version of [gCore](https://github.com/danjulio/gCore).
+
 ## gCore - A controller for portable GUI-based devices
-gCore ("Gadget Core") is an ESP32 development board designed to mate with the [Adafruit TFT Featherwing](https://www.adafruit.com/product/3651) 480x320 pixel 3.5" TFT LCD display with resistive touch.  It contains a WROVER-B module, USB UART, true USB power-bath Li-Ion battery charger, a pair of ICR10440 batteries and a boost/buck 3.3V converter.  It is designed to support soft-power control and battery voltage/charge status monitoring.  A write-up exists on [hackaday.io](https://hackaday.io/project/170774-gcore-for-gui-based-gadgets).
+gCore ("Gadget Core") is an ESP32 development board designed to mate with the [Adafruit TFT Featherwing](https://www.adafruit.com/product/3651) 480x320 pixel 3.5" TFT LCD display with resistive touch.  It contains a WROVER-B module, USB UART, true USB power-bath Li-Ion battery charger, a pair of ICR10440 batteries and a boost/buck 3.3V converter.  It is designed to support soft-power control and battery voltage/charge status monitoring.  A write-up exists on [hackaday.io](https://hackaday.io/project/170774-old-gcore-for-gui-based-gadgets).
 
 gCore is released as open source hardware and supporting software under the GPLv3 license in hopes it will be helpful to others.  This repository contains two subdirectories.
 
